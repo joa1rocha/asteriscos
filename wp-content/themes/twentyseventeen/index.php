@@ -1,67 +1,226 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
 
-get_header(); ?>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-<div class="wrap">
-	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
-	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
-	<?php endif; ?>
+				<!-- Intro -->
+					<div id="intro">
+						<h1>This is<br />
+						Massively</h1>
+						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+				<!-- Header -->
+					<header id="header">
+						<a href="index.php" class="logo">Massively</a>
+					</header>
 
-			<?php
-			if ( have_posts() ) :
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.php">This is Massively</a></li>
+							<li><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+				<!-- Main -->
+					<div id="main">
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/post/content', get_post_format() );
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">April 25, 2017</span>
+									<h2><a href="#">And this is a<br />
+									massive headline</a></h2>
+									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									amet nullam sed etiam veroeros.</p>
+								</header>
+								<a href="#" class="image main"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic01.jpg" alt="" /></a>
+								<ul class="actions">
+									<li><a href="#" class="button big">Full Story</a></li>
+								</ul>
+							</article>
 
-				endwhile;
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">April 24, 2017</span>
+										<h2><a href="#">Sed magna<br />
+										ipsum faucibus</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic02.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 22, 2017</span>
+										<h2><a href="#">Primis eget<br />
+										imperdiet lorem</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic03.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
 
-				the_posts_pagination( array(
-					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-				) );
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
 
-			else :
+					</div>
 
-				get_template_part( 'template-parts/post/content', 'none' );
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-			endif;
-			?>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+			</div>
 
-<?php get_footer();
+		<!-- Scripts -->
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/jquery.min.js"></script>
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/skel.min.js"></script>
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/util.js"></script>
+			<script src="../../../../../asteriscos/wp-content/themes/twentyseventeen/assets/js/main.js"></script>
+
+	</body>
+</html>
