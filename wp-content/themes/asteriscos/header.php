@@ -47,9 +47,9 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul class="links">
-                    <li class="active"><a href="\">Apresentação</a></li>
-                    <li><a href="\loja">Loja</a></li>
-                    <li></li>
+                    <li class="active"><a href="/asteriscos/">Apresentação</a></li>
+                    <li><a href="/asteriscos/loja">Loja</a></li>
+                    <li><a href="/asteriscos/carrinho">Carrinho</a></li>
                 </ul>
                 <ul class="icons">
                     <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
