@@ -231,7 +231,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	 *     An object that contains theme data returned by the WordPress.org API.
 	 *
 	 *     @type string $name           Theme name, e.g. 'Twenty Seventeen'.
-	 *     @type string $slug           Theme slug, e.g. 'asteriscos'.
+	 *     @type string $slug           Theme slug, e.g. 'asteriscos-old'.
 	 *     @type string $version        Theme version, e.g. '1.1'.
 	 *     @type string $author         Theme author username, e.g. 'melchoyce'.
 	 *     @type string $preview_url    Preview URL, e.g. 'http://2017.wordpress.net/'.
