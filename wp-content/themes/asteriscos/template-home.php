@@ -3,63 +3,29 @@
  * Template Name: Home
  */
 
-get_header(); ?>
+get_header();
 
-
-
-
-
-<?php
 // Sections
 $intro = get_field('intro') ?: [];
 $projetos = get_field('projetos') ?: [];
 $orgaosSociais = get_field('orgaos_sociais') ?: [];
 $rodape = get_field('rodape') ?: [];
+
+// Data
+setlocale(LC_TIME, 'pt_PT', 'pt_BR.utf-8', 'pt_PT.utf-8', 'portuguese');
+#date_default_timezone_set('America/Sao_Paulo');
+$hoje = strftime('%d de %B, %Y', strtotime('today'));
 ?>
-
-
-
-
-
-
-
-
-<div id="intro"><img src="images/Prancheta 7-8.png" width="708" height="271" alt=""/>
-    <h1>LEIRIA<br>
-    </h1>
-    <p>Associação de intervenção cívica, cultural e de promoção do conhecimento em geral.</p>
-    <ul class="actions">
-        <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-    </ul>
-</div>
-
-<!-- Header -->
-<header id="header"><a href="index.html" class="logo">***ASTERISCOS</a></header>
-
-<!-- Nav -->
-<nav id="nav">
-    <ul class="links">
-        <li class="active"><a href="index.html">Apresentação</a></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <ul class="icons">
-        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon fa-facebook fa-external-link"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-        <li></li>
-    </ul>
-</nav>
 
 <!-- Main -->
 <div id="main">
 
     <!-- Featured Post -->
     <article class="post featured">
-        <header class="major"><span class="date">16 de janeiro, 2018</span>
-            <h2><?= $intro['intro']; ?></h2>
+        <header class="major"><span class="date"><?= $hoje; ?></span>
+            <h2><?= $intro['titulo']; ?></h2>
             <?= $intro['texto']; ?>
-            <img src="<?= $intro['imagem']['url']; ?>"/>
+            <img class="image main" src="<?= $intro['imagem']['url']; ?>"/>
         </header>
     </article>
 

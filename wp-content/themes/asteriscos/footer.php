@@ -64,14 +64,6 @@
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 
-<!-- Scripts -->
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/jquery.min.js"></script>
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/jquery.scrollex.min.js"></script>
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/jquery.scrolly.min.js"></script>
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/skel.min.js"></script>
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/util.js"></script>
-<script src="../../../../../asteriscos/wp-content/themes/asteriscos/assets/js/main.js"></script>
-
 <?php wp_footer(); ?>
 
 </body>

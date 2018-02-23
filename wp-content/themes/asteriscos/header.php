@@ -18,8 +18,6 @@
 <title>Massively by HTML5 UP</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="../../../../../asteriscos/wp-content/themes/asteriscos/assets/css/main.css" />
-<noscript><link rel="stylesheet" href="../../../../../asteriscos/wp-content/themes/asteriscos/assets/css/noscript.css" /></noscript>
 
 <?php wp_head(); ?>
 </head>
@@ -33,3 +31,30 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
+            <div id="intro">
+                <!--    <img src="images/Prancheta 7-8.png" width="708" height="271" alt=""/>-->
+                <h1>LEIRIA<br>
+                </h1>
+                <p>Associação de intervenção cívica, cultural e de promoção do conhecimento em geral.</p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header id="header"><a href="index.html" class="logo">***ASTERISCOS</a></header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="\">Apresentação</a></li>
+                    <li><a href="\loja">Loja</a></li>
+                    <li></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook fa-external-link"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li></li>
+                </ul>
+            </nav>
