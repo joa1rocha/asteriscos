@@ -26,8 +26,8 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.php">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li class="active"><a href="elements.html">Elements Reference</a></li>
+							<li><a href="generic.php">Generic Page</a></li>
+							<li class="active"><a href="elements.php">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
