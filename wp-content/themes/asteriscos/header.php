@@ -12,7 +12,13 @@
  * @version 1.0
  */
 
-?><!DOCTYPE html>
+
+$currentPage = $_SERVER['REQUEST_URI'];
+$isActive = false;
+
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <title>***Asteriscos</title>
@@ -32,9 +38,8 @@
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
             <div id="intro">
-                <!--    <img src="images/Prancheta 7-8.png" width="708" height="271" alt=""/>-->
-                <h1>LEIRIA<br>
-                </h1>
+                    <img src="/assets/images/Prancheta 7-8.png" width="708" height="271" alt=""/>
+                <h1>LEIRIA</h1>
                 <p>Associação de intervenção cívica, cultural e de promoção do conhecimento em geral.</p>
                 <ul class="actions">
                     <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
@@ -47,9 +52,9 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul class="links">
-                    <li class="active"><a href="/asteriscos/">Apresentação</a></li>
-                    <li><a href="/asteriscos/loja">Loja</a></li>
-                    <li><a href="/asteriscos/carrinho">Carrinho</a></li>
+                    <li class="tab"><a href="/asteriscos/">Apresentação</a></li>
+                    <li class="tab"><a href="/asteriscos/loja/">Loja</a></li>
+                    <li class="tab"><a href="/asteriscos/carrinho/">Carrinho</a></li>
                 </ul>
                 <ul class="icons">
                     <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>

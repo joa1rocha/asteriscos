@@ -44,35 +44,6 @@ $hoje = strftime('%d de %B, %Y', strtotime('today'));
     <?php foreach($orgaosSociais as $orgaoSocial) : ?>
         <p><strong><?= $orgaoSocial['titulo']; ?></strong> <?= $orgaoSocial['texto']; ?></p>
     <?php endforeach; ?>
-    <footer>
-        <div class="pagination">
-            <!--<a href="#" class="previous">Prev</a>-->
-        </div>
-    </footer>
 </div>
-
-<!-- Footer -->
-<footer id="footer">
-    <section class="split contact">
-        <section class="alt">
-            <h3>Morada</h3>
-            <p><?= $rodape['morada'];?><br>
-            </p>
-        </section>
-        <section>
-            <h3>Email</h3>
-            <p><?= $rodape['email'];?><br>
-        </section>
-        <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li></li>
-            </ul>
-        </section>
-    </section>
-</footer>
 
 <?php get_footer(); ?>

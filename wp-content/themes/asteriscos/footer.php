@@ -13,7 +13,29 @@
  */
 
 ?>
-
+            <!-- Footer -->
+            <footer id="footer">
+                <section class="split contact">
+                    <section class="alt">
+                        <h3>Morada</h3>
+                        <p><?= $rodape['morada'];?><br>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p><?= $rodape['email'];?><br>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 		</div><!-- #content -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->

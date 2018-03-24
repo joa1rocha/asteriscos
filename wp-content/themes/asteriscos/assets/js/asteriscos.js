@@ -4,10 +4,10 @@
 
 (function($) {
 	var setCurrentPage = function() {
-		var navbar = $('#content #nav #links > li');
-        var url = window.location.href;
+		var navbar = $('#content #nav .links > li.tab');
+		var currentTab = navbar.find('a[href$="' +  window.location.pathname +'"]');
 
-        console.log(url);
+		currentTab.parent().addClass('active');
 
 	};
 
