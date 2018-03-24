@@ -15,7 +15,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-<title>Massively by HTML5 UP</title>
+<title>***Asteriscos</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -42,7 +42,7 @@
             </div>
 
             <!-- Header -->
-            <header id="header"><a href="index.html" class="logo">***ASTERISCOS</a></header>
+            <header id="header"><a href="/asteriscos" class="logo">***ASTERISCOS</a></header>
 
             <!-- Nav -->
             <nav id="nav">

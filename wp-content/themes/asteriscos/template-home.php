@@ -13,7 +13,6 @@ $rodape = get_field('rodape') ?: [];
 
 // Data
 setlocale(LC_TIME, 'pt_PT', 'pt_BR.utf-8', 'pt_PT.utf-8', 'portuguese');
-#date_default_timezone_set('America/Sao_Paulo');
 $hoje = strftime('%d de %B, %Y', strtotime('today'));
 ?>
 
@@ -75,3 +74,5 @@ $hoje = strftime('%d de %B, %Y', strtotime('today'));
         </section>
     </section>
 </footer>
+
+<?php get_footer(); ?>
