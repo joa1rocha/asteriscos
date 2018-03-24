@@ -16,6 +16,9 @@
 $currentPage = $_SERVER['REQUEST_URI'];
 $isActive = false;
 
+$attachmentID = 1875;
+$imageSizeName = "thumbnail";
+$prancheta= wp_get_attachment_image_src($attachmentID, $imageSizeName);
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +39,9 @@ $isActive = false;
 	</header><!-- #masthead -->
 
 	<div class="site-content-contain">
-		<div id="content" class="site-content">
+		<div id="wrapper" class="site-content fade-in">
             <div id="intro">
-                    <img src="/assets/images/Prancheta 7-8.png" width="708" height="271" alt=""/>
+                    <img class="prancheta" src="/asteriscos/wp-content/uploads/2018/02/Prancheta-7-8.png" width="708" height="271" alt=""/>
                 <h1>LEIRIA</h1>
                 <p>Associação de intervenção cívica, cultural e de promoção do conhecimento em geral.</p>
                 <ul class="actions">
@@ -47,7 +50,7 @@ $isActive = false;
             </div>
 
             <!-- Header -->
-            <header id="header"><a href="/asteriscos" class="logo">***ASTERISCOS</a></header>
+            <header id="header"><a href="/asteriscos/" class="logo">***ASTERISCOS</a></header>
 
             <!-- Nav -->
             <nav id="nav">

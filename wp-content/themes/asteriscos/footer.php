@@ -18,12 +18,12 @@
                 <section class="split contact">
                     <section class="alt">
                         <h3>Morada</h3>
-                        <p><?= $rodape['morada'];?><br>
+                        <p>PRACETA PROFESSOR JOAQUIM FILIPE, LOTE 6 LOJA A 2410-191 - Leiria<br>
                         </p>
                     </section>
                     <section>
                         <h3>Email</h3>
-                        <p><?= $rodape['email'];?><br>
+                        <p>geral@asteriscos.org<br>
                     </section>
                     <section>
                         <h3>Social</h3>

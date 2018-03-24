@@ -31,6 +31,7 @@ function enqueue_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array());
+	wp_enqueue_style( 'asteriscos', get_template_directory_uri() . '/assets/css/asteriscos.css', array());
 	wp_enqueue_style( 'noscript', get_template_directory_uri() . '/assets/css/noscript.css', array());
 
 }

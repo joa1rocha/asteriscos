@@ -1,0 +1,17 @@
+.prancheta {
+	width: 100%;
+	height: auto;
+}
+
+.image-projeto {
+	width:100%;
+}
+
+.woocommerce table.cart td.actions .input-text {
+	width: 160px;
+}
+
+.woocommerce-shipping-calculator {
+	display: block;
+	margin-top: 0;
+}

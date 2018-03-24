@@ -30,10 +30,10 @@ $hoje = strftime('%d de %B, %Y', strtotime('today'));
 
     <h1>PROJETOS</h1>
     <!-- Posts -->
-    <section class="posts">
+    <section class="posts projetos">
         <?php foreach($projetos as $projeto) : ?>
             <article>
-                <img src="<?= $projeto['imagem']['url']; ?>">
+                <img class="image-projeto" src="<?= $projeto['imagem']['url']; ?>">
                 <?= $projeto['descricao']; ?>
             </article>
         <?php endforeach; ?>
