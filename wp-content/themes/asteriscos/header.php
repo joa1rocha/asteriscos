@@ -41,7 +41,9 @@ $prancheta= wp_get_attachment_image_src($attachmentID, $imageSizeName);
 	<div class="site-content-contain">
 		<div id="wrapper" class="site-content fade-in">
             <div id="intro">
-                    <img class="prancheta" src="/asteriscos/wp-content/uploads/2018/02/Prancheta-7-8.png" width="708" height="271" alt=""/>
+	            <?php if ( get_header_image() ) : ?>
+                    <img class="prancheta" src="<?php header_image(); ?>" width="708" height="271" alt=""/>
+	            <?php endif; ?>
                 <h1>LEIRIA</h1>
                 <p>Associação de intervenção cívica, cultural e de promoção do conhecimento em geral.</p>
                 <ul class="actions">
